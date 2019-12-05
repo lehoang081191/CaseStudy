@@ -1,5 +1,5 @@
 
-let game = new Phaser.Game(550, 500, Phaser.AUTO, null, {
+let game = new Phaser.Game(780, 500, Phaser.AUTO, null, {
     preload: preload, create: create, update: update
 });
 let ball;
@@ -18,7 +18,7 @@ function preload() {
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
-    game.stage.backgroundColor = '#F8F9F9';
+    game.stage.backgroundColor = '#D6FBF7';
     game.load.image('paddle', 'anh/paddle.png');
     game.load.image('brick', 'anh/brick_blue.png');
     game.load.spritesheet('ball', 'anh/wobble.png', 20, 20);
@@ -71,7 +71,7 @@ function initBricks() {
         width: 50,
         height: 20,
         count: {
-            row: 8,
+            row: 12,
             col: 4
         },
         offset: {
